@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Eduvanz</string>
+    <string name="app_title">eduvanz</string>
+    <string name="app_skip">Skip</string>
+    <string name="continue_name">Continue</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="third_onboarding">Get Instant approval.</string>
+    <string name="second_onboarding">Bigger wallet better deals.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="first_onboarding">Study now pay later.</string>
+    <string name="whatsapp_otp_checkbox_text">Get OTP on Whatsapp    </string>
+    <string name="default_login_header_text">Enter your \nmobile number</string>
+    <string name="setuppin_title_fragment">Set up PIN for faster \n&#38; secure access</string>
+    <string name="enter_your_title_fragment">Enter your \nDetails</string>
+    <string name="enter_your_first_name">First Name</string>
+    <string name="enter_your_last_name">Last Name</string>
+    <string name="enter_your_email_id">Email ID</string>
+    <string name="verify_pan_card_title_fragment">Verify your PAN Card</string>
+    <string name="enter_your_pin_code">Pin Code</string>
+    <string name="enter_date_of_birth">Date of Birth</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="terms_condition_privacy_policy_textview">By taping "Continue", you agree to our \n <u>Terms and Service &#38; Privacy Policy</u></string>
+    <string name="otp_mobile_message">Enter the OTP Sent to  </string>
+    <string name="setup_pin_checkbox_text">Enable Device Login</string>
+    <string name="setup_pin_skip_now_text">Skip for now</string>
+    <string name="truecallerkey">gAl3ube7ba6867899490c9e2f2d5165f7dcc1</string>
+
+    <string name="phone_verify_notify_title">Confirming phone number</string>
+    <string name="phone_verify_notify_message">%s</string>
+    <string name="cancel_verification">Cancel</string>
+    <string name="verifier_registered">Registered for SMS receiver</string>
+    <string name="toast_unverified">Unverified Phone Number</string>
+    <string name="sign_up_title">Sign Up to SMS Verify</string>
+</resources>

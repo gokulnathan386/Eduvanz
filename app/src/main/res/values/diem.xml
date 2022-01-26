@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size">20sp</dimen>
+    <dimen name="buttom_margin">25dp</dimen>
+    <dimen name="title_header_margin">20dp</dimen>
+    <dimen name="screen_text_size">40sp</dimen>
+    <dimen name="spalsh_title_size">30sp</dimen>
+    <dimen name="login_checkboxtext_size">15sp</dimen>
+    <dimen name="details_your_name_text_size">15sp</dimen>
+    <dimen name="header_textview_padding">25dp</dimen>
+    <dimen name="header_image_height">211dp</dimen>
+    <dimen name="opt_message_text_size">15sp</dimen>
+    <dimen name="otp_text_height_width">50dp</dimen>
+    <dimen name="continue_buttom_margin">70dp</dimen>
+
+</resources>

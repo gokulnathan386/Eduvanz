@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.OtherDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        >
+        <TextView
+            android:id="@+id/enter_your_details_headher_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_image_height"
+            android:textColor="@color/white"
+            android:background="@drawable/basicimage"
+            android:gravity="left|center"
+            android:padding="@dimen/header_textview_padding"
+            android:text="@string/enter_your_title_fragment"
+            android:textSize="@dimen/spalsh_title_size" />
+        <View
+            android:id="@+id/view"
+            android:layout_width="350dp"
+            android:layout_height="5dp"
+            android:layout_below="@+id/enter_your_details_headher_title"
+            android:layout_marginBottom="10dp"
+            android:background="@color/teal_200" />
+
+        <TextView
+            android:id="@+id/pin_code_enter_your"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:gravity="left"
+            android:text="PIN Code"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/details_your_name_text_size"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextTPinCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pin_code_enter_your"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/black"
+            android:inputType="number"
+            android:text="" />
+        <TextView
+            android:id="@+id/date_Birth_enter_your_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextTPinCode"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:gravity="left"
+            android:text="Date of Birth"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/details_your_name_text_size"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextTextDateBirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date_Birth_enter_your_details"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/black"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/Gender_enter_your_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextTextDateBirth"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:gravity="left"
+            android:text="Gender"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/details_your_name_text_size"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="2dp"
+            android:id="@+id/gendercontrol"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#F4F4F4"
+            android:padding="2dp"
+            android:layout_below="@+id/Gender_enter_your_details"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/Enter_your_Male"
+            android:layout_width="200dp"
+            android:background="@drawable/shadow"
+            android:text="Male"
+            android:gravity="center"
+            android:layout_height="40dp">
+        </TextView>
+        <TextView
+            android:id="@+id/Enter_your_Female"
+            android:layout_width="200dp"
+            android:layout_marginLeft="3dp"
+            android:gravity="center"
+            android:text="Female"
+            android:background="@drawable/shadow"
+            android:layout_height="40dp">
+        </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/continue_buttom_margin"
+        android:layout_marginLeft="@dimen/buttom_margin"
+        android:layout_marginRight="@dimen/buttom_margin">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="This will not affect your credit score content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <Button
+            android:id="@+id/enterYourdetailscontinueetailscontinue"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:text="@string/continue_name" />
+    </LinearLayout>
+
+
+</FrameLayout>

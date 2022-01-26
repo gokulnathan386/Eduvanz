@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.smart.eduvanz.fragment.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_firstFragment"
+            app:destination="@id/firstFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_mobileLoginFragment"
+            app:destination="@id/mobileLoginFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.smart.eduvanz.fragment.FirstOnBoardingFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_firstonboarding" >
+        <action
+            android:id="@+id/action_defaultFirstFragment"
+            app:destination="@id/secondOnBoardingFragment" />
+        <action
+            android:id="@+id/action_defaultFirstSkipFragment"
+            app:destination="@id/mobileLoginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/secondOnBoardingFragment"
+        android:name="com.smart.eduvanz.fragment.SecondOnBoardingFragment"
+        android:label="fragment_second_on_boarding"
+        tools:layout="@layout/fragment_secondonboarding" >
+        <action
+            android:id="@+id/action_defaultSecondFragment"
+            app:destination="@id/thirdOnBoardingFragment" />
+        <action
+            android:id="@+id/action_defaultSecondSkipFragment"
+            app:destination="@id/mobileLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdOnBoardingFragment"
+        android:name="com.smart.eduvanz.fragment.ThirdOnBoardingFragment"
+        android:label="fragment_third_on_boarding"
+        tools:layout="@layout/fragment_thirdonboarding_screen" >
+        <action
+            android:id="@+id/action_defaultThirdFragment"
+            app:destination="@id/mobileLoginFragment" />
+    </fragment>
+<!-- login screen start -->
+    <fragment
+        android:id="@+id/mobileLoginFragment"
+        android:name="com.smart.eduvanz.fragment.LoginDefaultFragment"
+        android:label="fragment_mobile_number"
+        tools:layout="@layout/fragment_login_default" >
+        <action
+            android:id="@+id/action_mobileLoginFragment_to_otpLoginFragment"
+            app:destination="@id/otpLoginFragment" />
+        <action
+            android:id="@+id/action_mobileLoginFragment_to_minLoginFragment"
+            app:destination="@id/mpinLoginFragment" />
+        <action
+            android:id="@+id/action_to_basicdetail"
+            app:destination="@id/enterYourDetailsscreenFragment" />
+        <action
+            android:id="@+id/action_to_showpan"
+            app:destination="@id/verifyYourPanCardFragment" />
+        <action
+            android:id="@+id/action_to_setmpin"
+            app:destination="@id/setuppinFragment" />
+
+        <action
+            android:id="@+id/action_to_verify_mpin"
+            app:destination="@id/mPinVerifyScreen" />
+        <action
+            android:id="@+id/action_login_to_limitfetch"
+            app:destination="@id/limit_fetch_screen" />
+
+    </fragment>
+    <!-- OTP  screen -->
+    <fragment
+        android:id="@+id/otpLoginFragment"
+        android:name="com.smart.eduvanz.fragment.OtpLoginFragment"
+        android:label="fragment_otp_login"
+        tools:layout="@layout/fragment_otp_login"
+        >
+        <action
+            android:id="@+id/action_otplogin_to_loginscreen"
+            app:destination="@id/mobileLoginFragment" />
+    <action
+        android:id="@+id/action_default_loginotpFragment"
+        app:destination="@id/setuppinFragment" />
+        <action
+            android:id="@+id/action_otplogin_to_yourdetails"
+            app:destination="@id/enterYourDetailsscreenFragment" />
+        <action
+            android:id="@+id/action_otplogin_to_limitfetch"
+            app:destination="@id/limit_fetch_screen" />
+    </fragment>
+    <!-- mPin screen -->
+    <fragment
+        android:id="@+id/mpinLoginFragment"
+        android:name="com.smart.eduvanz.fragment.MPINLoginFragment"
+        android:label="fragment_mpin_login"
+        tools:layout="@layout/fragment_mpin_login"
+        >
+        <action
+            android:id="@+id/action_mpinlogin_to_yourdetails"
+            app:destination="@id/enterYourDetailsscreenFragment" />
+        <action
+            android:id="@+id/action_mpinlogin_to_showpan"
+            app:destination="@+id/verifyYourPanCardFragment"/>
+        <action
+            android:id="@+id/action_mpinlogin_to_loadlimit"
+            app:destination="@id/enterYourDetailsscreenFragment" />
+        <action
+            android:id="@+id/action_mpinlogin_to_showlimit"
+            app:destination="@id/enterYourDetailsscreenFragment" />
+        <action
+            android:id="@+id/action_mpinlogin_to_otplogin"
+            app:destination="@id/otpLoginFragment" />
+        <action
+            android:id="@+id/action_mpinlogin_to_limitfetch"
+            app:destination="@id/limit_fetch_screen" />
+    </fragment>
+    <!-- set mpin screen -->
+    <fragment
+        android:id="@+id/setuppinFragment"
+        android:name="com.smart.eduvanz.fragment.SetuppinFragment"
+        android:label="fragment_setuppin"
+        tools:layout="@layout/fragment_setuppin" >
+    <action
+        android:id="@+id/action_default_to_setuppinFragment"
+        app:destination="@id/enterYourDetailsscreenFragment" />
+     <action
+            android:id="@+id/action_default_to_setuppinSkipForNowFragment"
+            app:destination="@id/enterYourDetailsscreenFragment" />
+        <action
+            android:id="@+id/action_confirm_mpin"
+            app:destination="@id/confirmpan" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmpan"
+        android:name="com.smart.eduvanz.fragment.ConfirmMpin"
+        android:label="fragment_confirmmpin"
+        tools:layout="@layout/fragment_confirm_mpin" >
+        <action
+            android:id="@+id/action_default_to_confirmpinSkipForNowFragment"
+            app:destination="@id/enterYourDetailsscreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/enterYourDetailsscreenFragment"
+        android:name="com.smart.eduvanz.fragment.EnterYourDetailsscreenFragment"
+        android:label="fragment_enter_your_detailsscreen"
+        tools:layout="@layout/fragment_enter_your_detailsscreen">
+    <action
+        android:id="@+id/action_default_to_enterYourDetailsFragment"
+        app:destination="@id/verifyYourPanCardFragment" />
+    </fragment>
+    <!-- PAN View screen -->
+    <fragment
+        android:id="@+id/verifyYourPanCardFragment"
+        android:name="com.smart.eduvanz.fragment.VerifyYourPanCardFragment"
+        android:label="fragment_verify_your_pan_card"
+        tools:layout="@layout/fragment_verify_your_pan_card" >
+        <action
+            android:id="@+id/action_default_to_VerifyPanCarFragment"
+            app:destination="@id/panCardInfoFragment" />
+        <action
+            android:id="@+id/action_panview_to_fetchlimit"
+            app:destination="@id/limit_fetch_screen" />
+    </fragment>
+    <fragment
+        android:id="@+id/panCardInfoFragment"
+        android:name="com.smart.eduvanz.fragment.PanCardInfoFragment"
+        android:label="fragment_pan_card_info"
+        tools:layout="@layout/fragment_pan_card_info" >
+        <action
+            android:id="@+id/action_panenter_to_limitfetch"
+            app:destination="@id/limit_fetch_screen" />
+    </fragment>
+    <fragment
+        android:id="@+id/mPinVerifyScreen"
+        android:name="com.smart.eduvanz.fragment.PanCardInfoFragment"
+        android:label="fragment_pan_card_info"
+        tools:layout="@layout/fragment_pan_card_info" >
+        <action
+            android:id="@+id/action_verify_mpin_to_otp_verification"
+            app:destination="@id/otpLoginFragment" />
+        <action
+            android:id="@+id/action_verify_mpin_to_basicdetail"
+            app:destination="@id/enterYourDetailsscreenFragment" />
+    </fragment>
+    <!-- limit fetch screen -->
+    <fragment
+        android:id="@+id/limit_fetch_screen"
+        android:name="com.smart.eduvanz.fragment.SplashSuccessFragment"
+        android:label="limit_fetch"
+        tools:layout="@layout/fragment_splash_success" >
+        <action
+            android:id="@+id/action_limitfetch_to_successfully"
+            app:destination="@id/limit_fetch_success_screen" />
+        <action
+            android:id="@+id/action_limitfetch_to_reject"
+            app:destination="@id/limit_fetch_reject_screen" />
+        <action
+            android:id="@+id/action_limitfetch_to_awaiting"
+            app:destination="@id/limit_fetch_awaiting_screen" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/limit_fetch_success_screen"
+        android:name="com.smart.eduvanz.fragment.SplashSuccessfullyFragment"
+        android:label="limit_fetch"
+        tools:layout="@layout/fragment_splash_success" >
+    </fragment>
+    <fragment
+        android:id="@+id/limit_fetch_reject_screen"
+        android:name="com.smart.eduvanz.fragment.RejectFragment"
+        android:label="limit_fetch"
+        tools:layout="@layout/fragment_reject" >
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/limit_fetch_awaiting_screen"
+        android:name="com.smart.eduvanz.fragment.FinishFragment"
+        android:label="limit_fetch"
+        tools:layout="@layout/fragment_finish" >
+    </fragment>
+
+</navigation>

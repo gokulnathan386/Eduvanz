@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.RejectFragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:gravity="center"
+       android:layout_marginTop="50dp"
+       android:layout_height="wrap_content">
+       <ImageView
+           android:layout_width="110dp"
+           android:background="@drawable/reject"
+           android:layout_height="140dp">
+       </ImageView>
+   </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="220dp"
+    android:id="@+id/textmsg"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="You are on the wait list"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:layout_height="wrap_content">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        android:text="We couldn’t approve your \n application right now.\n You may reapply after 1 month"
+        android:textColor="#000000"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:paddingTop="40dp"
+        android:layout_marginTop="2dp"
+        android:text="While you are on wait list you \n can add a co-borrower  "
+        android:textColor="#000000"
+        android:layout_height="wrap_content">
+    </TextView>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:padding="30dp"
+    android:layout_marginTop="400dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="The Co-borrower will:"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/iconc"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="140dp"
+                android:gravity="center"
+                android:text="Downloads the app"></TextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="58dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:background="#26000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/iconlimit"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="140dp"
+                android:gravity="center"
+                android:text="Downloads the app"></TextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="58dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:background="#26000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/coinicon"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="25dp"
+                android:gravity="center"
+                android:text="You and co-borrower start spending "></TextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#26000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#1251F1"
+            android:textSize="20dp"
+            android:text="Let’s get started"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    </LinearLayout>
+</LinearLayout>
+
+</FrameLayout>

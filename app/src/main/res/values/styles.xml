@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="Widget.Theme.Eduvanz.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="android:fontFamily">@font/graphik_regular</item>
+        <item name="fontFamily">@font/graphik_regular</item>
+    </style>
+</resources>

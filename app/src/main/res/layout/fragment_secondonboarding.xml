@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/onboarding_01"
+    tools:context=".fragment.SecondOnBoardingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/title_header_margin">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="eduvanz."
+            android:textSize="@dimen/text_size"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_weight=".50"/>
+
+        <TextView
+            android:id="@+id/second_skip_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_skip"
+            android:textSize="@dimen/text_size"
+            android:gravity="right"
+            android:textColor="@color/white"
+            android:layout_weight=".50"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:layout_margin="35dp">
+
+        <TextView
+            android:id="@+id/screen_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="44dp"
+            android:textSize="45dp"
+            android:lineHeight="55dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="@string/second_onboarding" />
+
+        <Button
+            android:id="@+id/secondcontinue"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:text="@string/continue_name" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.EnterYourDetailsscreenFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        >
+        <TextView
+            android:id="@+id/enter_your_details_headher_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_image_height"
+            android:textColor="@color/white"
+            android:background="@drawable/basicimage"
+            android:gravity="left|center"
+            android:padding="@dimen/header_textview_padding"
+            android:text="@string/enter_your_title_fragment"
+            android:textSize="@dimen/spalsh_title_size" />
+        <View
+            android:id="@+id/view"
+            android:layout_width="185dp"
+            android:layout_height="5dp"
+            android:layout_below="@+id/enter_your_details_headher_title"
+            android:layout_marginBottom="10dp"
+            android:background="@color/teal_200" />
+        <TextView
+            android:id="@+id/first_name_enter_your_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="left"
+            android:layout_below="@+id/view"
+            android:textStyle="bold"
+            android:text="@string/enter_your_first_name"
+            android:textSize="@dimen/details_your_name_text_size" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/first_name_enter_your_details"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/black"
+            android:inputType="textPersonName"
+            android:text="" />
+        <TextView
+            android:id="@+id/last_name_enter_your_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:layout_below="@+id/editTextTextPersonFirstName"
+            android:text="@string/enter_your_last_name"
+            android:textSize="@dimen/details_your_name_text_size" />
+        <EditText
+            android:id="@+id/editTextTextPersonLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/last_name_enter_your_details"
+            android:inputType="textPersonName"
+            android:backgroundTint="@color/black"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/email_id_enter_your_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:layout_below="@+id/editTextTextPersonLastName"
+            android:text="@string/enter_your_email_id"
+            android:textSize="@dimen/details_your_name_text_size" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonEmailIdDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email_id_enter_your_details"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/black"
+            android:inputType="textEmailAddress"
+            android:text="" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/continue_buttom_margin"
+        android:layout_marginLeft="@dimen/buttom_margin"
+        android:layout_marginRight="@dimen/buttom_margin">
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/basic_google"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/biobtn_background"
+            android:drawableRight="@drawable/google34"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:text="Connect With" />
+        <TextView
+            android:id="@+id/otp_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:text="This will not affect your credit score content"
+            />
+        <Button
+            android:id="@+id/enterYourdetailscontinueetailscontinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_background"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:text="@string/continue_name" />
+    </LinearLayout>
+</FrameLayout>
